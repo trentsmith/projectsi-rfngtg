@@ -193,10 +193,6 @@ getbuyorsell()
       {
         this.temp = data;
       }) 
-/*while(!trycatch)
-{
-try
-{*/
   var maxhigh=0;
 var minlow=0;
 var maxvolume =0;
@@ -236,8 +232,6 @@ var minvolume =0;
         }
   var hml = maxhigh-minlow;
 var hvl = maxvolume - minvolume;
-//var lowhighprice = [minlow,maxhigh-hml*0.2,maxhigh-hml*0.4,maxhigh-hml*0.6,maxhigh-hml*0.8,maxhigh];
-//var lowhighvolume = [minvolume,maxvolume-hvl*0.2,maxvolume-hvl*0.4,maxvolume-hvl*0.6,maxvolume-hvl*0.8,maxvolume];
 var lowhighprice = [minlow,maxhigh-hml*0.5,maxhigh];
 var lowhighvolume = [minvolume,maxvolume-hvl*0.5,maxvolume];
             console.log(this.currentDate+"thisone")
@@ -255,8 +249,9 @@ var lowhighvolume = [minvolume,maxvolume-hvl*0.5,maxvolume];
                 var p = m;
               }
             }
-        var array = [this.tickers[i],this.NN[i].run([p
-            , v])];
+
+        var array = [this.tickers[i],0];
+
 if(array[1]=isNaN)
 {
   array[1]=0;
@@ -286,11 +281,22 @@ console.log(this.currentDate.toString()+"failed");
       }
 if(count>1)
 {
-  array[1]=1;
+        if(p<2&&m>1)
+        {
+          array[1]=1;
+        }
+        else
+        {
+          array[1]=0;
+        }
 }
 else
 {
   array[1]=0;
+          if(p<2&&m>1)
+        {
+          array[1]=1;
+        }
 }
 
 }
@@ -307,15 +313,10 @@ gettickersymbols()
   );
   
   
-  //for(var i = 0;i<this.ti""ckers.length;i++)
-  //{
+
     this.tickerssectors.push("");
-  //}
   this.test =[];
-  //for(var i = 0;i<this.tickers.length;i++)
-  //{
     this.test.push("");
-  //}
   console.log(this.test);
   var stockstring="";
   for(var i =0;i<this.tickers.length;i++)
