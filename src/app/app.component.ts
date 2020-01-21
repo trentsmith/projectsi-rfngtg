@@ -279,9 +279,10 @@ try
 console.log(this.currentDate.toString()+"failed");
       }
       }
+      var bias = 2;
 if(count>1)
 {
-        if(p<2||v<2)
+        if(p<bias||v<bias)
         {
           array[1]=1;
         }
