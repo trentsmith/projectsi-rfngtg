@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClientModule, HttpClient,HttpHeaders,HttpParams } from '@angular/common/http';
-
+//note in getbuyorsell the following open is not working because some of the dates are missing please fix and update.
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
