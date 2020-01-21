@@ -252,8 +252,6 @@ var lowhighvolume = [minvolume,maxvolume-hvl*0.5,maxvolume];
 
         var array = [this.tickers[i],0];
 
-if(array[1]=isNaN)
-{
   array[1]=0;
 var count = 0;
       for(var k =10;k>2;k--)
@@ -277,7 +275,6 @@ try
       catch(err)
       {
 console.log(this.currentDate.toString()+"failed");
-      }
       }
       var bias = 2;
 if(count>1)
