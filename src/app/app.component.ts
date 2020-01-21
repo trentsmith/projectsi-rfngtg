@@ -281,7 +281,6 @@ console.log(this.currentDate.toString()+"failed");
       }
 if(count>1)
 {
-
         if(p<2||v<2)
         {
           array[1]=1;
