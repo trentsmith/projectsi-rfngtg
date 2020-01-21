@@ -1,0 +1,24 @@
+
+p {
+  font-family: Lato;
+}
+.jumbotron
+{
+background-color: rgb(125, 187, 31);
+}
+.table
+{
+  background-color: white;
+}
+div.jumbotron
+{
+    padding: -200px -100px -140px --100px
+}
+.btn-block
+{
+  background-color:red;
+}
+.btn
+{
+  background-color:white;
+}
