@@ -306,7 +306,8 @@ if(count>-1)
 }
 else
 {
-  console.log();
+  console.log(p);
+  console.log(m);
             if(p<bias||v<bias)
         {
           array[1]=1;
