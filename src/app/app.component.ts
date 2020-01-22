@@ -250,6 +250,7 @@ var lowhighvolume = [minvolume,maxvolume-hvl*0.5,maxvolume];
               catch(err)
               {
                 offset++;
+                console.log(offset);
                 p=1;
               }
             }
