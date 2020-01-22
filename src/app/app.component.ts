@@ -235,9 +235,24 @@ var hvl = maxvolume - minvolume;
 var lowhighprice = [minlow,maxhigh-hml*0.5,maxhigh];
 var lowhighvolume = [minvolume,maxvolume-hvl*0.5,maxvolume];
             console.log(this.currentDate+"thisone")
+            var p =1;
+            var offset  = 0;
+            while(!p)
+            {
+              this.getDate(offset);
+              try
+              {
           var open = this.temp["history"][this.currentDate]["open"];
           var close = this.temp["history"][this.currentDate]["close"];
           var volume1 = this.temp["history"][this.currentDate]["volume"];
+          p = 0;
+              }
+              catch(err)
+              {
+                offset++;
+                p=1;
+              }
+            }
             for(var m = 0;m<lowhighprice.length-1;m++)
             {
               if(lowhighvolume[m]<volume1&&lowhighvolume[m+1]>=volume1)
