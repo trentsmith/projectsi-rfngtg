@@ -404,12 +404,12 @@ getSector(ticker:any)
   if(this.test[count]=="Tech")
   {
     this.tickerssectors[count]=
-    ["a"];
+    ["F","GOOG"];
   }
   if(this.test[count]=="Energy")
   {
     this.tickerssectors[count]=
-    ["a"];
+    ["ENPH"];
   }
   if(this.test[count]=="Healthcare")
   {
