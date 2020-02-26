@@ -232,8 +232,8 @@ var minvolume =0;
         }
   var hml = maxhigh-minlow;
 var hvl = maxvolume - minvolume;
-var lowhighprice = [minlow,minlow+hml*0.1,maxhigh];
-var lowhighvolume = [minvolume,minvolume+hvl*0.1,maxvolume];
+var lowhighprice = [minlow,minlow+hml*0.5,maxhigh];
+var lowhighvolume = [minvolume,minvolume+hvl*0.5,maxvolume];
             console.log(this.currentDate+"thisone")
             var p =1;
             var offset  = 0;
