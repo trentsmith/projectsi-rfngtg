@@ -292,7 +292,7 @@ try
       {
 console.log(this.currentDate.toString()+"failed");
       }
-      var bias = 1;
+      var bias = 2;
 if(count>-1)
 {
         if(p<bias||v<bias)
