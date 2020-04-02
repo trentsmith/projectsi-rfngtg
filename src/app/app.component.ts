@@ -414,22 +414,22 @@ getSector(ticker:any)
   if(this.test[count]=="Healthcare")
   {
     this.tickerssectors[count]=
-    ["a"];
+    ["ISRG","VRTX","ABBV"];
   }
   if(this.test[count]=="Industrials")
   {
     this.tickerssectors[count]=
-    ["a"];
+    ["GE","CAT","HON"];
   }      
   if(this.test[count]=="Real Estate")
   {
     this.tickerssectors[count]=
-    ["a"];
+    ["AMT","PSA","FFO"];
   }
   if(this.test[count]=="Financials")
   {
     this.tickerssectors[count]=
-    ["a"];
+    ["C","MS","BAC"];
   }
   console.log(this.tickerssectors[count]);
     console.log(this.test[count]);
