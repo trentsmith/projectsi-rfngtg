@@ -227,7 +227,7 @@ var minvolume =0;
           }
           catch(err)
           {
-            console.log(this.currentDate.toString()+"failed");
+            //console.log(this.currentDate.toString()+"failed");
           }
         }
   var hml = maxhigh-minlow;
@@ -281,19 +281,19 @@ try
           
         if( open < close)
         {
-          count++;
+          this.count[i]++;
         }
         else
         {
-          count--;
+          this.count[i]--;
         }
       }
       catch(err)
       {
-console.log(this.currentDate.toString()+"failed");
+//console.log(this.currentDate.toString()+"failed");
       }
       var bias = 2;
-if(count>-1)
+if(this.count[i]>-1)
 {
         if(p<bias||v<bias)
         {
@@ -317,10 +317,12 @@ else
   this.buyorsell = buyorsell;
 }
 info:any[];
+count=[];
 gettickersymbols()
 {
   this.info = [];
   this.tickers.push(this.stock);
+  this.count.push(0);
   this.tickerssectors.push([]
   );
   
