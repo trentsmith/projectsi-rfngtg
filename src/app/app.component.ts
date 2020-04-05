@@ -293,6 +293,9 @@ try
 //console.log(this.currentDate.toString()+"failed");
       }
       var bias = 2;
+
+
+}
 if(this.count[i]>-1)
 {
         if(p<bias||v<bias)
@@ -309,8 +312,6 @@ else
   console.log(p);
   console.log(m);
           array[1]=0;    
-}
-
 }
             buyorsell.push( array );
   }
