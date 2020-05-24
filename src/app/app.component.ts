@@ -254,14 +254,19 @@ var lowhighvolume = [minvolume,minvolume+hvl*0.5,maxvolume];
                 l=1;
               }
             }
+            //double check this function
             for(var m = 0;m<lowhighprice.length-1;m++)
             {
+                              console.log(m+ " "+lowhighprice[m]);
+                              console.log(open);
+
               if(lowhighvolume[m]<volume1&&lowhighvolume[m+1]>=volume1)
               {
                 var v = m;
               }
               if(lowhighprice[m]<open&&lowhighprice[m+1]>=open)
               {
+                console.log("ya7")
                 var p = m;
               }
             }
