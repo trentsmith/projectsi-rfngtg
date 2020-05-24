@@ -292,13 +292,15 @@ try
       {
 //console.log(this.currentDate.toString()+"failed");
       }
-      var bias = 2;
+      var bias = 1;
 
 
 }
 if(this.count[i]>-1)
 {
-        if(p<bias||v<bias)
+  console.log(p);
+  console.log(bias);
+        if(p<bias/*||v<bias*/)
         {
           array[1]=1;
         }
