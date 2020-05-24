@@ -237,7 +237,7 @@ var lowhighvolume = [minvolume,minvolume+hvl*0.5,maxvolume];
             console.log(this.currentDate+"thisone")
             var l =1;
             var offset  = 0;
-            while(!p)
+            while(!l)
             {
               this.getDate(offset);
               try
