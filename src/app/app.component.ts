@@ -254,7 +254,7 @@ var lowhighvolume = [minvolume,minvolume+hvl*0.5,maxvolume];
                 l=1;
               }
             }
-            //double check this function
+            //double check this function the open is giving problems double check tuesday.
             for(var m = 0;m<lowhighprice.length-1;m++)
             {
                               console.log(m+ " "+lowhighprice[m]);
