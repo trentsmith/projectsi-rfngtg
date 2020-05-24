@@ -235,7 +235,7 @@ var hvl = maxvolume - minvolume;
 var lowhighprice = [minlow,minlow+hml*0.25,minlow+hml*0.5,minlow+hml*0.75,maxhigh];
 var lowhighvolume = [minvolume,minvolume+hvl*0.5,maxvolume];
             console.log(this.currentDate+"thisone")
-            var p =1;
+            var l =1;
             var offset  = 0;
             while(!p)
             {
@@ -245,13 +245,13 @@ var lowhighvolume = [minvolume,minvolume+hvl*0.5,maxvolume];
           var open = this.temp["history"][this.currentDate]["open"];
           var close = this.temp["history"][this.currentDate]["close"];
           var volume1 = this.temp["history"][this.currentDate]["volume"];
-          p = 0;
+          l = 0;
               }
               catch(err)
               {
                 offset++;
                 console.log(offset);
-                p=1;
+                l=1;
               }
             }
             for(var m = 0;m<lowhighprice.length-1;m++)
