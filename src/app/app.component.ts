@@ -201,7 +201,7 @@ var minvolume =0;
         {
           try
           {
-            this.getDate(j);
+            this.getDate(j+4);
             var high = this.temp["history"][this.currentDate]["high"];
             var low = this.temp["history"][this.currentDate]["low"];
             var volume = this.temp["history"][this.currentDate]["volume"];
